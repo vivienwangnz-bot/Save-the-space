@@ -1,20 +1,39 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Nova Defense (新星防御)
 
-# Run and deploy your AI Studio app
+A classic missile command style tower defense game built with React, Tailwind CSS, and Vite.
 
-This contains everything you need to run your app locally.
+## Features
+- **Infinite Ammo**: Non-stop defense action.
+- **Massive Blast Radius**: Interceptor missiles have a large AoE.
+- **High-Speed Interception**: Fast-moving player missiles.
+- **Bilingual Support**: Chinese and English.
+- **Responsive Design**: Works on mobile and desktop.
 
-View your app in AI Studio: https://ai.studio/apps/156bd141-ce31-4561-a8a7-60cb944fdd7f
+## Deployment to Vercel
 
-## Run Locally
+1. **Upload to GitHub**:
+   - Create a new repository on GitHub.
+   - Initialize git in your local project folder:
+     ```bash
+     git init
+     git add .
+     git commit -m "Initial commit"
+     git remote add origin <your-github-repo-url>
+     git push -u origin main
+     ```
 
-**Prerequisites:**  Node.js
+2. **Connect to Vercel**:
+   - Log in to [Vercel](https://vercel.com).
+   - Click **Add New** -> **Project**.
+   - Import your GitHub repository.
+   - Vercel will automatically detect the Vite project.
+   - Click **Deploy**.
 
+## Environment Variables
+If you use the Gemini API in the future, make sure to add `GEMINI_API_KEY` to your Vercel project's environment variables.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Local Development
+```bash
+npm install
+npm run dev
+```
